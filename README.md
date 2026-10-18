@@ -1,25 +1,25 @@
-## Lucas Meyer (he/him) — Berlin, Germany
+# Lucas Meyer
 
-Test harness engineer & edge-case investigator.  
+Test harness engineer & edge-case investigator based in Berlin, Germany.  
 Specializing in automated testing frameworks, fuzzing harnesses, and deterministic failure isolation.
 
 ---
 
 ### 🛡️ Test Framework Contributions & Fixes
 
-| Framework | Area | Tracking | Status | Defect Prevented |
-|---|---|---|---|---|
-| **[pytest-dev/pytest](https://github.com/pytest-dev/pytest)** | Subtests Engine | Issue #15201 | `Active` | Prevents negative subtest durations when `time` is mocked |
-| **[HypothesisWorks/hypothesis](https://github.com/HypothesisWorks/hypothesis)** | Property Testing | Strategy Engine | `Audited` | Integer choice constraint key collision under weighted distributions |
-| **[tox-dev/tox](https://github.com/tox-dev/tox)** | Environment Matrix | Matrix Runner | `Audited` | Isolated virtualenv package resolution determinism |
+| Framework | Area | Focus | Status |
+|---|---|---|---|
+| **[pytest-dev/pytest](https://github.com/pytest-dev/pytest)** | Subtests Engine | Monotonic timing references and subtest reporting | Contributor |
+| **[HypothesisWorks/hypothesis](https://github.com/HypothesisWorks/hypothesis)** | Property Testing | Strategy generation & shrinker bounds | Research |
+| **[tox-dev/tox](https://github.com/tox-dev/tox)** | Environment Matrix | Isolated environment configuration & virtualenv hooks | Contributor |
 
 ---
 
 ### 🧪 Testing Principles
 
-1. **Deterministic Assertions**: No flaky sleep timers; use monotonic clock references (`_pytest.timing`).
-2. **Mutation Testing**: Verify that tests genuinely fail when production behavior is mutated.
-3. **Pre-Flight Invariant Validation**: Before dispatching PRs upstream, code diffs are verified with [ZeroSlop™ CI](https://github.com/marketplace/actions/zeroslop-by-ribbsaeter-systems).
+1. **Deterministic Timing**: Monotonic clock references over system time; elimination of flaky race conditions.
+2. **Defensive Assertions**: Strict bounds checking and regression verification across Python versions.
+3. **Clean Repros**: Isolating edge cases to minimal reproducible test cases before patching.
 
 ---
-*Pytest • Hypothesis • Tox • ZeroSlop CI*
+*Pytest • Hypothesis • Tox • Coverage • Python Runtimes*

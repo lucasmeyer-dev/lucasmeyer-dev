@@ -1,5 +1,10 @@
 # Lucas Meyer
 
+<p align="center">
+  <img src="assets/dev_header.png" alt="Developer Terminal" width="100%" style="border-radius: 10px;">
+</p>
+
+
 Test harness engineer & edge-case investigator based in Berlin, Germany.  
 Specializing in automated testing frameworks, fuzzing harnesses, and deterministic failure isolation.
 
